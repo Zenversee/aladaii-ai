@@ -1,18 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+    content: [
+        "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+        "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+        "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    ],
+    theme: {
+        extend: {
+            colors: {
+                "Noble-Black/300": "#9B9C9E",
+                "Stem-Green/500": "#B6F09C",
+                "Noble-Black/600": "#1A1D21",
+                "Noble-Black/400": "#686B6E",
+                "hover-btnBG": "#292C30",
+            },
+        },
+        backgroundImage: (theme) => ({
+            "signup-banner": "url('/signup/banner.png')",
+        }),
     },
-  },
-  plugins: [],
-}
+    plugins: [],
+};
