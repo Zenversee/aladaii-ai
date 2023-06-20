@@ -13,6 +13,8 @@ module.exports = {
                 "Noble-Black/600": "#1A1D21",
                 "Noble-Black/400": "#686B6E",
                 "hover-btnBG": "#292C30",
+                "input-bg": "#0D0F10",
+                "input-border": "#27292A",
             },
         },
         backgroundImage: (theme) => ({
